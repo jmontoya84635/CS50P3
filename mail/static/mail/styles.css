@@ -1,0 +1,9 @@
+textarea {
+    min-height: 400px;
+}
+.read {
+    background: #b6b6b6;
+}
+.email-link {
+    cursor: pointer;
+}
