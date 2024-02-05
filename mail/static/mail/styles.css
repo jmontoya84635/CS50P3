@@ -7,3 +7,8 @@ textarea {
 .email-link {
     cursor: pointer;
 }
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

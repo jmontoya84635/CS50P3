@@ -21,7 +21,7 @@
                 From: <input disabled class="form-control" value="{{ request.user.email }}">
             </div>
             <div class="form-group">
-                To: <input id="compose-recipients" class="form-control">
+                <input id="compose-recipients" class="form-control" placeholder="To:">
             </div>
             <div class="form-group">
                 <input class="form-control" id="compose-subject" placeholder="Subject">
@@ -30,8 +30,25 @@
             <input id="submit-email" type="submit" class="btn btn-primary"/>
         </form>
     </div>
+    <div id="single-email-view">
+        <div class="card">
+            <div class="card-header flex-container">
+                <h3 id="single-email-sender"></h3>
+                <button id="single-email-reply" class="ml-auto btn btn-outline-primary">Reply</button>
+                <button id="single-email-archive" class="btn btn-outline-primary"></button>
+            </div>
+            <div class="card-header flex-container">
+                <h5 id="single-email-recipients"></h5>
+                <h5 id="single-email-timestamp" class="ml-auto text-muted">timestamp</h5>
 
-    <div id="single-email-view"></div>
+            </div>
+            <div class="card-body">
+                <h5 id="single-email-subject" class="card-title"></h5>
+                <hr>
+                <p id="single-email-body" class="card-text"></p>
+            </div>
+        </div>
+    </div>
 {% endblock %}
 
 {% block script %}
